@@ -1,5 +1,73 @@
 .topo {
-    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    background: #ffffff;
+    height: 64px;
+    border-radius: 14px;
+    border: #cbaaff;
+    border-style: dashed;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.logo img {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.menu li a:hover {
+    background: #3d3d3d;
+    color: #fff;
+}
+
+.tema {
+    margin-left: 24px;
+}
+
+/* Switch style */
+.switch {
     position: relative;
-    word-spacing: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: not-allowed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    border-radius: 22px;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
 }
