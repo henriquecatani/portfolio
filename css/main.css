@@ -6,7 +6,11 @@
     }
     .menu li a {
         color: white;
+        .active {
+            color: black;
+        }
     }
+    
 }
 
 .light {
