@@ -6,10 +6,11 @@
     }
     .menu li a {
         color: white;
-        .active {
-            color: black;
-        }
     }
+    .active {
+        background-color: #552c57;
+    }
+    
     
 }
 
@@ -52,6 +53,7 @@
 }
 .active {
     background-color: #e9dbff;
+    color: black
 }
 
 .menu li a:hover {
