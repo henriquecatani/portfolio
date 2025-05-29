@@ -12,7 +12,9 @@
     .active {
         background-color: #552c57;
     }
-    
+    .janela {
+        background-color: #391d3a;
+    }
     
 }
 
@@ -45,6 +47,7 @@
     border: #cbaaff;
     border-style: dashed;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
 }
 
 .logo img {
@@ -88,10 +91,11 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 #titulo-grande {
+    padding-top: 70px;
     font-size: 500%;
     line-height: 1.4; /* ou 0.9, 0.8 - teste o que fica melhor */
     margin-bottom: 0;
@@ -129,6 +133,51 @@ article h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .janelas-container .janela:hover {
+    transform: scale(1.04);
+    flex: 1.2;
+}
+
+.txteimg {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-shrink: 1;
+    gap: 50px;
+    padding: 60px;
+}
+.texto-left {
+    background-color:rgb(105, 105, 105);
+    flex: 1.4;
+
+}
+.direita {
+    background-color:rgb(255, 0, 0);
+    flex: 0.6;
+}
+.imagens-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 600px;
+    
+}
+.imagem {
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    height: 200px;
+    padding: 20px;
+    flex: 1;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+.imagem p {
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imagens-container .imagem:hover {
     transform: scale(1.04);
     flex: 1.2;
 }
