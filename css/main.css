@@ -97,7 +97,7 @@ article {
 #titulo-grande {
     padding-top: 70px;
     font-size: 500%;
-    line-height: 1.4; /* ou 0.9, 0.8 - teste o que fica melhor */
+    line-height: 1.4;
     margin-bottom: 0;
 }
 
@@ -132,6 +132,9 @@ article h2 {
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.janela img {
+    width: 250px;
+}
 .janelas-container .janela:hover {
     transform: scale(1.04);
     flex: 1.2;
@@ -145,39 +148,42 @@ article h2 {
     gap: 50px;
     padding: 60px;
 }
-.texto-left {
-    background-color:rgb(105, 105, 105);
-    flex: 1.4;
 
-}
-.direita {
-    background-color:rgb(255, 0, 0);
+.texto-left {
     flex: 0.6;
+    padding: 20px;
+    padding-top: 0px;
+    font-size: 105%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.direita {
+    flex: 0.4;
+}
+
 .imagens-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    width: 600px;
-    
-}
-.imagem {
-    border-radius: 14px;
-    transition: all 0.3s ease;
-    min-width: 200px;
-    height: 200px;
-    padding: 20px;
-    flex: 1;
-    background-color: antiquewhite;
-    justify-content: center;
+    width: 100%;
 }
 
-.imagem p {
-    font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.imagem {
+    flex: 1;
+    min-width: calc(50% - 10px);
+    position: relative;
+    transition: all 0.3s ease;
 }
+
+.imagem img {
+    border-radius: 14px;
+    transition: inherit;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 .imagens-container .imagem:hover {
-    transform: scale(1.04);
-    flex: 1.2;
+    transform: scale(1.02);
 }
