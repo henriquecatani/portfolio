@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 .dark {
     background-color: rgb(34, 31, 34);
     color: antiquewhite;
@@ -15,7 +15,9 @@
     .janela {
         background-color: #391d3a;
     }
-    
+    .botaolink {
+        background-color: #552c57;
+    }   
 }
 
 .light {
@@ -133,11 +135,15 @@ article h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .janela img {
-    width: 250px;
+    width: 200px;
+    border-radius: 50%;
 }
 .janelas-container .janela:hover {
     transform: scale(1.04);
     flex: 1.2;
+    .link {
+        opacity: 100%;
+    }
 }
 
 .txteimg {
@@ -153,6 +159,7 @@ article h2 {
     flex: 0.6;
     padding: 20px;
     padding-top: 0px;
+    padding-right: 100px;
     font-size: 105%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -186,4 +193,61 @@ article h2 {
 
 .imagens-container .imagem:hover {
     transform: scale(1.02);
+    
+}
+
+.link {
+    align-self: flex-end;
+    opacity: 0%;
+}
+
+.logo-nick {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(width - 20px);
+    height: 200px;
+    background-color: rgb(79, 54, 85);
+    border-radius: 14px;
+}
+.logo-nick img {
+    padding: 10px;
+    border-radius: 50%;
+    width: 150px;
+}
+.logo-nick p {
+    color: antiquewhite;
+    font-family: "Inter", sans-serif;
+    font-size: 135%;
+    padding-right: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 5px;
+}
+
+.meus-links {
+    display: flex;
+    flex: 0.6;
+    min-width: 600px;
+    flex-direction: column;
+    p {
+        font-family: "Inter", sans-serif;
+    }
+    
+}
+.botaolink {
+    text-decoration: none;
+    flex-direction: row;
+    display: flex;
+    height: 60px;
+    width: 250px;
+    border-radius: 14px;
+    border: 4px dashed;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f0e7ff;
 }
